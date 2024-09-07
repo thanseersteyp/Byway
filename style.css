@@ -173,8 +173,7 @@ header ul li a img.cart {
 	width: 100%;
 }
 #categories section.categories div.body ul li {
-	width: 17%;
-	padding: 24px 50px;
+	padding: 24px 93px;
 	border: 1px solid #e2e8f0;
 	border-radius: 16px;
 	box-shadow: 1px 1px 1px 0px rgb(0, 0, 0, 0.2);
@@ -235,7 +234,7 @@ header ul li a img.cart {
 	padding: 15px;
 	border: 1px solid #e2e8f0;
 	border-radius: 16px;
-	box-shadow: 0px 2px 2px 1px rgb(0, 0, 0, 0.1);
+	box-shadow: 0px 1px 0px 0px rgb(0, 0, 0, 0.1);
 	width: 21%;
 }
 #courses section.courses div.body ul li img.bg {
@@ -298,11 +297,10 @@ header ul li a img.cart {
 	justify-content: space-between;
 }
 #instructors section.instructors div.body ul li {
-	padding: 15px;
+	padding: 16px;
 	border: 1px solid #e2e8f0;
 	border-radius: 16px;
-	box-shadow: 0px 1px 1px 1px rgb(0, 0, 0, 0.1);
-	width: 15%;
+	box-shadow: 0px 1px 0px 0px rgb(0, 0, 0, 0.1);
 }
 #instructors section.instructors div.body ul li img.bg {
 	width: 100%;
@@ -366,12 +364,12 @@ header ul li a img.cart {
 #about section.about div.head div.right {
 	display: flex;
 	justify-content: space-between;
-	width: 120px;
-	height: 40px;
+	width: 200px;
+	height: 50px;
 }
 #about section.about div.head div.right img {
 	background: #94A3B8;
-	padding: 10px 16px;
+	padding: 12px 32px;
 	border-radius: 8px;
 }
 #about section.about div.body {
@@ -383,11 +381,11 @@ header ul li a img.cart {
 	width: 100%;
 }
 #about section.about div.body ul li {
-	padding: 13px;
-	width: 30%;
+	padding: 24px;
+	width: 29%;
 	border: 1px solid #e2e8f0;
 	border-radius: 16px;
-	box-shadow: 0px 2px 2px 1px rgb(0, 0, 0, 0.1);
+	box-shadow: 0px 1px 0px 0px rgb(0, 0, 0, 0.1);
 }
 #about section.about div.body ul li img {
 	width: 48px;
@@ -404,6 +402,7 @@ header ul li a img.cart {
 #about section.about div.body ul li div.role {
 	display: flex;
 	height: 65px;
+	align-items: center;
 }
 #about section.about div.body ul li div.role img {
 	border-radius: 50%;
@@ -411,9 +410,7 @@ header ul li a img.cart {
 	height: 60px;
 	width: 60px;
 	margin-right: 10px;
-}
-#about section.about div.body ul li div.role div.name {
-	padding-top: 13px;
+	margin-bottom: 0px;
 }
 #about section.about div.body ul li div.role div.name h4 {
 	font-size: 18px;
@@ -523,16 +520,18 @@ footer section.footer div.left div.logo {
 	margin-bottom: 25px;
 }
 footer section.footer div.left div.logo small {
-	font-size: 14px;
+	font-size: 21px;
 	font-weight: 400;
 }
 footer section.footer div.left p.one {
 	font-size: 14px;
 	line-height: 25px;
+	color: #cbd5e1;
 }
 footer section.footer div.left p.two {
 	font-size: 14px;
 	line-height: 25px;
+	color: #cbd5e1;
 }
 footer section.footer div.right {
 	display: flex;
@@ -549,6 +548,7 @@ footer section.footer div.right ul li {
 	font-size: 14px;
 	font-weight: 500;
 	margin-bottom: 12px;
+	color: #cbd5e1;
 }
 footer section.footer div.right ul li a {
 	color: #cbd5e1;
@@ -561,7 +561,15 @@ footer section.footer div.right ul.last ul {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 25px;
-	width: 60%;
+	width: 75%;
+}
+@media all and (max-width:1280px) {
+	#categories section.categories div.body ul li {
+		padding: 24px 80px;
+	}
+	#about section.about div.body ul li {
+		width: 27%;
+	}
 }
 @media all and (max-width:980px) {
 		#spotlight section.spotlight section.top div.left img {
@@ -587,6 +595,7 @@ footer section.footer div.right ul.last ul {
 		}
 		#categories section.categories div.body ul li {
 			width: 11%;
+			padding: 24px 50px;
 		}
 		#courses section.courses div.body ul li div.rating {
 			font-size: 11px;
@@ -617,10 +626,16 @@ footer section.footer div.right ul.last ul {
 			width: 84%;
 		}
 		#about section.about div.body ul li {
-			width: 28%;
+			width: 26%;
+		}
+		#instructors section.instructors div.body ul li {
+			width: 15%;
 		}
 }
 @media all and (max-width:768px) {
+		#about section.about div.body ul li {
+			width: 23%;
+		}
 		#courses section.courses div.body ul li h3 {
 			text-align: center;
 		}
@@ -823,8 +838,12 @@ footer section.footer div.right ul.last ul {
 	}
 }
 @media all and (max-width:480px) {
+	#about section.about div.head div.right img {
+		padding:12px;
+	}
 	#about section.about div.head div.right {
-		width: 150px;
+		width: 100px;
+		height: 40px;
 	}
 	#home section.home div.right {
 		display: none;
@@ -873,7 +892,7 @@ footer section.footer div.right ul.last ul {
 		justify-content: space-evenly;
 	}
 	#instructors section.instructors div.body ul li {
-		width: 23%;
+		width: 39%;
 		margin-bottom: 30px;
 	}
 	#about section.about div.body ul {
@@ -893,19 +912,20 @@ footer section.footer div.right ul.last ul {
     }
     #spotlight section.spotlight section.top div.right {
     	width: 100%;
+		text-align: center;
     }
     #spotlight section.spotlight section.top div.right h3 {
     	text-align: center;
 		font-size: 18px;
+		margin-top: 10px;
+		margin-bottom: 10px;
     }
     #spotlight section.spotlight section.top div.right p {
     	text-align: center;
     }
     #spotlight section.spotlight section.top div.right a.button {
-    	display: block;
+    	display: inline-block;
     	margin: 0 auto;
-    	width: 205px;
-		padding: 12px 15px;
     }
     #spotlight section.spotlight section.bottom {
     	flex-wrap: wrap;
@@ -921,14 +941,15 @@ footer section.footer div.right ul.last ul {
     #spotlight section.spotlight section.bottom div.left h3 {
     	text-align: center;
 		font-size: 18px;
+		margin-top: 10px;
+		margin-bottom: 10px;
     }
     #spotlight section.spotlight section.bottom div.left p {
     	text-align: center;
     }
     #spotlight section.spotlight section.bottom div.left a.button {
-    	display: block;
-    	margin: 0 auto;
-    	width: 145px;
+    	display: inline-block;
+    	text-align: center;
     }
     footer section.footer {
     	flex-wrap: wrap;
@@ -967,9 +988,22 @@ footer section.footer div.right ul.last ul {
     }
     #spotlight section.spotlight section.bottom div.left {
     	margin-top: 7px;
+		text-align: center;
     }
 	#instructors section.instructors div.body ul li div.rating div.right {
-		font-size: 9.5px;
+		font-size: 12px;
+		display: block;
+		width: 100%;
+	}
+	#instructors section.instructors div.body ul li div.rating {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		margin-top: -10px;
+	}
+	#instructors section.instructors div.body ul li div.rating div.left {
+		width: 100%;
+		justify-content: center;
 	}
 }
 @media all and (max-width:360px) {
